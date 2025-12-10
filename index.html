@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Shop</title>
+
+    <!-- Gọi file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>🛒 Mini Shop</header>
+
+    <div class="container">
+        <!-- Sản phẩm -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Áo Thun Trắng</h3>
+            <p>Giá: <b>120.000đ</b></p>
+            <button onclick="addToCart('Áo Thun Trắng', 120000)">Mua ngay</button>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Giày Sneaker</h3>
+            <p>Giá: <b>650.000đ</b></p>
+            <button onclick="addToCart('Giày Sneaker', 650000)">Mua ngay</button>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Nón Lưỡi Trai</h3>
+            <p>Giá: <b>90.000đ</b></p>
+            <button onclick="addToCart('Nón Lưỡi Trai', 90000)">Mua ngay</button>
+        </div>
+    </div>
+
+    <!-- Giỏ hàng -->
+    <div id="cart">
+        <h3>🧺 Giỏ hàng</h3>
+        <div id="cartItems"></div>
+        <hr>
+        <p><b>Tổng tiền: </b><span id="total">0</span> đ</p>
+    </div>
+
+    <!-- Gọi file JS -->
+    <script src="script.js"></script>
+</body>
+</html>
